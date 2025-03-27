@@ -1,0 +1,271 @@
+Windows PowerShell
+版权所有（C） Microsoft Corporation。保留所有权利。
+
+安装最新的 PowerShell，了解新功能和改进！https://aka.ms/PSWindows
+
+加载个人及系统配置文件用了 3194 毫秒。
+(base) PS D:\LZL\XD> conda activate mindspore-2.4.0
+(mindspore-2.4.0) PS D:\LZL\XD> pip install matplotlib
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting matplotlib
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/d7/68/0d03098b3feb786cbd494df0aac15b571effda7f7cbdec267e8a8d398c16/matplotlib-3.10.1-cp311-cp311-win_amd64.whl (8.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.1/8.1 MB 2.5 MB/s eta 0:00:00
+Collecting contourpy>=1.0.1 (from matplotlib)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/a8/7e/cd93cab453720a5d6cb75588cc17dcdc08fc3484b9de98b885924ff61900/contourpy-1.3.1-cp311-cp311-win_amd64.whl (219 kB)
+Collecting cycler>=0.10 (from matplotlib)
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl (8.3 kB)
+Collecting fonttools>=4.22.0 (from matplotlib)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/3b/90/4926e653041c4116ecd43e50e3c79f5daae6dcafc58ceb64bc4f71dd4924/fonttools-4.56.0-cp311-cp311-win_amd64.whl (2.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 1.8 MB/s eta 0:00:00
+Collecting kiwisolver>=1.3.1 (from matplotlib)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/2d/27/bdf1c769c83f74d98cbc34483a972f221440703054894a37d174fba8aa68/kiwisolver-1.4.8-cp311-cp311-win_amd64.whl (71 kB)
+Requirement already satisfied: numpy>=1.23 in c:\users\dell\.conda\envs\mindspore-2.4.0\lib\site-packages (from matplotlib) (1.26.4)
+Requirement already satisfied: packaging>=20.0 in c:\users\dell\.conda\envs\mindspore-2.4.0\lib\site-packages (from matplotlib) (24.1)
+Requirement already satisfied: pillow>=8 in c:\users\dell\.conda\envs\mindspore-2.4.0\lib\site-packages (from matplotlib) (11.0.0)
+Collecting pyparsing>=2.3.1 (from matplotlib)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/1c/a7/c8a2d361bf89c0d9577c934ebb7421b25dc84bf3a8e3ac0a40aed9acc547/pyparsing-3.2.1-py3-none-any.whl (107 kB)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\dell\.conda\envs\mindspore-2.4.0\lib\site-packages (from matplotlib) (2.9.0.post0)
+Requirement already satisfied: six>=1.5 in c:\users\dell\.conda\envs\mindspore-2.4.0\lib\site-packages (from python-dateutil>=2.7->matplotlib) (1.16.0)
+Installing collected packages: pyparsing, kiwisolver, fonttools, cycler, contourpy, matplotlib
+Successfully installed contourpy-1.3.1 cycler-0.12.1 fonttools-4.56.0 kiwisolver-1.4.8 matplotlib-3.10.1 pyparsing-3.2.1
+(mindspore-2.4.0) PS D:\LZL\XD> pip install nltk
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting nltk
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/4d/66/7d9e26593edda06e8cb531874633f7c2372279c3b0f46235539fe546df8b/nltk-3.9.1-py3-none-any.whl (1.5 MB)
+Collecting click (from nltk)
+  Downloading https://pypi.tuna.tsinghua.edu.cn/packages/7e/d4/7ebdbd03970677812aac39c869717059dbb71a4cfc033ca6e5221787892c/click-8.1.8-py3-none-any.whl (98 kB)
+Requirement already satisfied: joblib in c:\users\dell\.conda\envs\mindspore-2.4.0\lib\site-packages (from nltk) (1.4.2)
+Requirement already satisfied: regex>=2021.8.3 in c:\users\dell\.conda\envs\mindspore-2.4.0\lib\site-packages (from nltk) (2024.9.11)
+Requirement already satisfied: tqdm in c:\users\dell\.conda\envs\mindspore-2.4.0\lib\site-packages (from nltk) (4.66.6)
+Requirement already satisfied: colorama in c:\users\dell\.conda\envs\mindspore-2.4.0\lib\site-packages (from click->nltk) (0.4.6)
+Installing collected packages: click, nltk
+Successfully installed click-8.1.8 nltk-3.9.1
+(mindspore-2.4.0) PS D:\LZL\XD> cd .\mindspore-version\
+(mindspore-2.4.0) PS D:\LZL\XD\mindspore-version> python .\bielman_attention_pytorch.py
+C:\Users\dell\.conda\envs\mindspore-2.4.0\python.exe: can't open file 'D:\\LZL\\XD\\mindspore-version\\bielman_attention_pytorch.py': [Errno 2] No such file or directory
+(mindspore-2.4.0) PS D:\LZL\XD\mindspore-version> python .\bielman_attention_mindspore.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\dell\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     C:\Users\dell\AppData\Roaming\nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+训练集大小: 108000
+验证集大小: 12000
+测试集大小: 7600
+Preprocessing Train Texts: 100%|████████████████████████████████████████████████████████████████| 108000/108000 [00:02<00:00, 46669.53it/s]
+Preprocessing Val Texts: 100%|████████████████████████████████████████████████████████████████████| 12000/12000 [00:00<00:00, 45668.53it/s]
+Preprocessing Test Texts: 100%|█████████████████████████████████████████████████████████████████████| 7600/7600 [00:00<00:00, 47335.77it/s]
+Data Augmentation: 100%|████████████████████████████████████████████████████████████████████████| 108000/108000 [00:08<00:00, 13031.69it/s]
+Converting Train Tokens: 100%|█████████████████████████████████████████████████████████████████| 216000/216000 [00:01<00:00, 185589.51it/s]
+Converting Val Tokens: 100%|█████████████████████████████████████████████████████████████████████| 12000/12000 [00:00<00:00, 168662.13it/s]
+Converting Test Tokens: 100%|██████████████████████████████████████████████████████████████████████| 7600/7600 [00:00<00:00, 155918.27it/s]
+Loading GloVe embeddings...
+Vocab size: 62205, Hit: 54100, Miss: 8105
+Epoch 1 Training: 80it [01:03,  1.27it/s]
+Traceback (most recent call last):
+  File "D:\LZL\XD\mindspore-version\bielman_attention_mindspore.py", line 291, in <module>
+    train_loss, train_acc = train_one_epoch(model, train_dataset_gen, epoch)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\LZL\XD\mindspore-version\bielman_attention_mindspore.py", line 248, in train_one_epoch
+    logits, _ = model(texts)
+                ^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\nn\cell.py", line 731, in __call__
+    return self.construct(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\LZL\XD\mindspore-version\bielman_attention_mindspore.py", line 215, in construct
+    rnn_out, _ = self.rnn(emb)
+                 ^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\nn\cell.py", line 731, in __call__
+    return self.construct(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\nn\layer\rnns.py", line 569, in construct
+    x_n, hx_n = self._stacked_bi_dynamic_rnn(x, hx, seq_length)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\nn\layer\rnns.py", line 484, in _stacked_bi_dynamic_rnn
+    output_f, h_t_f = self.rnn(pre_layer, h_f_i, seq_length, w_f_ih, w_f_hh, b_f_ih, b_f_hh)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\nn\cell.py", line 731, in __call__
+    return self.construct(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\nn\layer\rnns.py", line 188, in construct
+    return self.recurrent(x, h, w_ih, w_hh, b_ih, b_hh)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\nn\layer\rnns.py", line 135, in recurrent
+    h = self.cell(x_t, h, w_ih, w_hh, b_ih, b_hh)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\nn\layer\rnn_cells.py", line 86, in _rnn_tanh_cell
+    return P.Tanh()(igates + hgates)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+(mindspore-2.4.0) PS D:\LZL\XD\mindspore-version> python .\bielman_attention_mindspore.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\dell\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     C:\Users\dell\AppData\Roaming\nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+训练集大小: 108000
+验证集大小: 12000
+测试集大小: 7600
+Preprocessing Train Texts: 100%|████████████████████████████████████████████████████████████████| 108000/108000 [00:02<00:00, 44146.53it/s]
+Preprocessing Val Texts: 100%|████████████████████████████████████████████████████████████████████| 12000/12000 [00:00<00:00, 47911.36it/s]
+Preprocessing Test Texts: 100%|█████████████████████████████████████████████████████████████████████| 7600/7600 [00:00<00:00, 48989.92it/s]
+Data Augmentation: 100%|████████████████████████████████████████████████████████████████████████| 108000/108000 [00:07<00:00, 13904.66it/s]
+Converting Train Tokens: 100%|█████████████████████████████████████████████████████████████████| 216000/216000 [00:01<00:00, 147708.53it/s]
+Converting Val Tokens: 100%|█████████████████████████████████████████████████████████████████████| 12000/12000 [00:00<00:00, 148128.80it/s]
+Converting Test Tokens: 100%|██████████████████████████████████████████████████████████████████████| 7600/7600 [00:00<00:00, 149375.40it/s]
+Loading GloVe embeddings...
+Vocab size: 62175, Hit: 54076, Miss: 8099
+Epoch 1 Training: 51it [04:46,  5.61s/it]
+Traceback (most recent call last):
+  File "D:\LZL\XD\mindspore-version\bielman_attention_mindspore.py", line 291, in <module>
+    train_loss, train_acc = train_one_epoch(model, train_dataset_gen, epoch)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\LZL\XD\mindspore-version\bielman_attention_mindspore.py", line 250, in train_one_epoch
+    grads = ops.GradOperation(get_by_list=True)(lambda x, y: loss_fn(model(x)[0], y), model.trainable_params())(texts, labels)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\ops\composite\base.py", line 391, in after_grad
+    return grad_(fn, weights)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\common\api.py", line 188, in wrapper
+    results = fn(*arg, **kwargs)
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\ops\composite\base.py", line 380, in after_grad
+    out = _pynative_executor.grad(fn, grad_, weights, self.grad_position, *run_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\common\api.py", line 1484, in grad
+    return self._executor.grad(grad, obj, weights, grad_position, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+(mindspore-2.4.0) PS D:\LZL\XD\mindspore-version> python .\bielman_attention_mindspore.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\dell\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     C:\Users\dell\AppData\Roaming\nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+训练集大小: 108000
+验证集大小: 12000
+测试集大小: 7600
+Preprocessing Train Texts: 100%|████████████████████████████████████████████████████████████████| 108000/108000 [00:02<00:00, 45213.18it/s]
+Preprocessing Val Texts: 100%|████████████████████████████████████████████████████████████████████| 12000/12000 [00:00<00:00, 47908.21it/s]
+Preprocessing Test Texts: 100%|█████████████████████████████████████████████████████████████████████| 7600/7600 [00:00<00:00, 51043.41it/s]
+Data Augmentation: 100%|████████████████████████████████████████████████████████████████████████| 108000/108000 [00:07<00:00, 14764.63it/s]
+Converting Train Tokens: 100%|█████████████████████████████████████████████████████████████████| 216000/216000 [00:01<00:00, 169760.05it/s]
+Converting Val Tokens: 100%|█████████████████████████████████████████████████████████████████████| 12000/12000 [00:00<00:00, 138451.77it/s]
+Converting Test Tokens: 100%|██████████████████████████████████████████████████████████████████████| 7600/7600 [00:00<00:00, 158980.54it/s]
+Loading GloVe embeddings...
+Vocab size: 62140, Hit: 54062, Miss: 8078
+Epoch 1 Training: 0it [00:40, ?it/s]
+Traceback (most recent call last):
+  File "D:\LZL\XD\mindspore-version\bielman_attention_mindspore.py", line 291, in <module>
+    train_loss, train_acc = train_one_epoch(model, train_dataset_gen, epoch)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\LZL\XD\mindspore-version\bielman_attention_mindspore.py", line 250, in train_one_epoch
+    grads = ops.GradOperation(get_by_list=True)(lambda x, y: loss_fn(model(x)[0], y), model.trainable_params())(texts, labels)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\ops\composite\base.py", line 391, in after_grad
+    return grad_(fn, weights)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\common\api.py", line 188, in wrapper
+    results = fn(*arg, **kwargs)
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\ops\composite\base.py", line 380, in after_grad
+    out = _pynative_executor.grad(fn, grad_, weights, self.grad_position, *run_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\common\api.py", line 1484, in grad
+    return self._executor.grad(grad, obj, weights, grad_position, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+(mindspore-2.4.0) PS D:\LZL\XD\mindspore-version> python .\bielman_attention_mindspore.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\dell\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     C:\Users\dell\AppData\Roaming\nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+训练集大小: 108000
+验证集大小: 12000
+测试集大小: 7600
+Preprocessing Train Texts: 100%|████████████████████████████████████████████████████████████████| 108000/108000 [00:02<00:00, 44112.52it/s]
+Preprocessing Val Texts: 100%|████████████████████████████████████████████████████████████████████| 12000/12000 [00:00<00:00, 49525.28it/s]
+Preprocessing Test Texts: 100%|█████████████████████████████████████████████████████████████████████| 7600/7600 [00:00<00:00, 52309.98it/s]
+Data Augmentation: 100%|████████████████████████████████████████████████████████████████████████| 108000/108000 [00:07<00:00, 13770.31it/s]
+Converting Train Tokens: 100%|█████████████████████████████████████████████████████████████████| 216000/216000 [00:01<00:00, 164132.82it/s]
+Converting Val Tokens: 100%|█████████████████████████████████████████████████████████████████████| 12000/12000 [00:00<00:00, 133918.46it/s]
+Converting Test Tokens: 100%|██████████████████████████████████████████████████████████████████████| 7600/7600 [00:00<00:00, 124307.66it/s]
+Loading GloVe embeddings...
+Vocab size: 62171, Hit: 54051, Miss: 8120
+Epoch 1 Training: 0it [00:21, ?it/s]
+Traceback (most recent call last):
+  File "D:\LZL\XD\mindspore-version\bielman_attention_mindspore.py", line 291, in <module>
+    train_loss, train_acc = train_one_epoch(model, train_dataset_gen, epoch)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\LZL\XD\mindspore-version\bielman_attention_mindspore.py", line 250, in train_one_epoch
+    grads = ops.GradOperation(get_by_list=True)(lambda x, y: loss_fn(model(x)[0], y), model.trainable_params())(texts, labels)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\ops\composite\base.py", line 391, in after_grad
+    return grad_(fn, weights)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\common\api.py", line 188, in wrapper
+    results = fn(*arg, **kwargs)
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\ops\composite\base.py", line 380, in after_grad
+    out = _pynative_executor.grad(fn, grad_, weights, self.grad_position, *run_args)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\dell\.conda\envs\mindspore-2.4.0\Lib\site-packages\mindspore\common\api.py", line 1484, in grad
+    return self._executor.grad(grad, obj, weights, grad_position, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+(mindspore-2.4.0) PS D:\LZL\XD\mindspore-version> python .\bielman_attention_mindspore.py
+[nltk_data] Downloading package stopwords to
+[nltk_data]     C:\Users\dell\AppData\Roaming\nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+[nltk_data] Downloading package wordnet to
+[nltk_data]     C:\Users\dell\AppData\Roaming\nltk_data...
+[nltk_data]   Package wordnet is already up-to-date!
+训练集大小: 108000
+验证集大小: 12000
+测试集大小: 7600
+Preprocessing Train Texts: 100%|████████████████████████████████████████████████████████████████| 108000/108000 [00:02<00:00, 43814.02it/s]
+Preprocessing Val Texts: 100%|████████████████████████████████████████████████████████████████████| 12000/12000 [00:00<00:00, 49895.31it/s]
+Preprocessing Test Texts: 100%|█████████████████████████████████████████████████████████████████████| 7600/7600 [00:00<00:00, 52808.10it/s]
+Data Augmentation: 100%|████████████████████████████████████████████████████████████████████████| 108000/108000 [00:07<00:00, 14894.59it/s]
+Converting Train Tokens: 100%|█████████████████████████████████████████████████████████████████| 216000/216000 [00:01<00:00, 179798.30it/s]
+Converting Val Tokens: 100%|█████████████████████████████████████████████████████████████████████| 12000/12000 [00:00<00:00, 153086.10it/s]
+Converting Test Tokens: 100%|██████████████████████████████████████████████████████████████████████| 7600/7600 [00:00<00:00, 123810.36it/s]
+Loading GloVe embeddings...
+Vocab size: 62159, Hit: 54059, Miss: 8100
+Epoch 1 Training: 844it [2:00:18,  8.55s/it]
+Evaluating: 47it [00:48,  1.03s/it]
+Epoch 1: Train Loss=0.3235, Train Acc=0.8895, Val Loss=0.2229, Val Acc=0.9218
+Epoch 2 Training: 844it [1:57:43,  8.37s/it]
+Evaluating: 47it [00:45,  1.03it/s]
+Epoch 2: Train Loss=0.1852, Train Acc=0.9383, Val Loss=0.1886, Val Acc=0.9360
+Epoch 3 Training: 844it [1:54:29,  8.14s/it]
+Evaluating: 47it [00:45,  1.03it/s]
+Epoch 3: Train Loss=0.1284, Train Acc=0.9554, Val Loss=0.2080, Val Acc=0.9337
+Epoch 4 Training: 844it [1:54:31,  8.14s/it]
+Evaluating: 47it [00:45,  1.03it/s]
+Epoch 4: Train Loss=0.0936, Train Acc=0.9664, Val Loss=0.2271, Val Acc=0.9338
+Epoch 5 Training: 844it [1:55:39,  8.22s/it]
+Evaluating: 47it [00:46,  1.01it/s]
+Epoch 5: Train Loss=0.0823, Train Acc=0.9702, Val Loss=0.2643, Val Acc=0.9335
+Evaluating: 30it [00:29,  1.03it/s]
+Test Accuracy: 0.9008
+Test F1-score (macro): 0.9003
+Classification Report:
+              precision    recall  f1-score   support
+
+       World       0.90      0.90      0.90      1900
+      Sports       0.93      0.98      0.95      1900
+    Business       0.88      0.84      0.86      1900
+    Sci/Tech       0.88      0.88      0.88      1900
+
+    accuracy                           0.90      7600
+   macro avg       0.90      0.90      0.90      7600
+weighted avg       0.90      0.90      0.90      7600
+
+Training and evaluation completed (MindSpore).
+
