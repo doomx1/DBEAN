@@ -1,5 +1,5 @@
 # Dynamic Bidirectional Elman Attention Networks (DBEAN)  
-**A Hybrid Framework for Efficient and Interpretable Text Classification**  
+**Dynamic Bi-Elman Attention Networks: A DualDirectional Context-Aware Test-Time Learning for Text Classification**  
 
 ### Acknowledgments 
 We would like to express our gratitude to the MindSpore Community for their inval-uable support and resources throughout this research. Thanks for the support provided by MindSpore Community
@@ -7,7 +7,7 @@ We would like to express our gratitude to the MindSpore Community for their inva
 ---
 
 ## Method Overview  
-DBEAN addresses limitations of traditional recurrent neural networks (RNNs) and transformer-based models by integrating **bidirectional temporal modeling** with **adaptive self-attention mechanisms**. The core design balances computational efficiency, contextual depth, and interpretability through three synergistic components:  
+DBEAN addresses limitations of traditional recurrent neural networks and transformer-based models by integrating **bidirectional temporal modeling** with **adaptive self-attention mechanisms**. The core design balances computational efficiency, contextual depth, and interpretability through three synergistic components:  
 
 ### 1. **Bidirectional Elman Networks (Bi-Elman)**  
 • **Dual-pathway RNNs**: Simultaneously process input sequences in forward (left-to-right) and backward (right-to-left) directions to capture bidirectional contextual dependencies (e.g., grammatical structures and semantic associations).  
@@ -15,20 +15,20 @@ DBEAN addresses limitations of traditional recurrent neural networks (RNNs) and 
 • **Limitations Addressed**: Mitigates vanishing gradients through simplified gating mechanisms compared to LSTMs/GRUs.  
 
 ### 2. **Dynamic Attention Fusion**  
-• **Adaptive Weighting**: Computes time-step-specific attention scores using a lightweight self-attention mechanism to dynamically emphasize salient contextual segments (e.g., negation cues in sentiment analysis).  
+• **Adaptive Weighting**: Computes time-step-specific attention scores using a lightweight self-attention mechanism to dynamically emphasize salient contextual segments.  
 • **Contextual Refinement**: Re-weights the concatenated bidirectional hidden states to prioritize task-relevant information, improving feature discriminability.  
 • **Scalability**: Maintains linear complexity with sequence length (vs. quadratic cost of full self-attention).  
 
 ### 3. **Hybrid Architecture**  
 • **End-to-End Learning**: Combines bidirectional recurrence and attention in a unified framework to avoid information loss from static feature fusion.  
-• **Interpretability**: Attention weights provide insights into critical tokens driving classifications (e.g., highlighting "COVID-19" in pandemic-related texts).  
+• **Interpretability**: Attention weights provide insights into critical tokens driving classifications.  
 
 ---
 
 ## Key Innovations  
 • **Dynamic Context Fusion**: Replaces static concatenation with learned attention weights to adaptively fuse bidirectional features.  
 • **Test-Time Adaptation**: Injects test samples into the forward pass and updates parameters incrementally to refine contextual representations.  
-• **Resource Efficiency**: Achieves 30% fewer parameters than comparable transformers (e.g., BERT-base) while maintaining competitive accuracy.  
+• **Resource Efficiency**: Achieves 30% fewer parameters than comparable transformers while maintaining competitive accuracy.  
 
 ---
 
